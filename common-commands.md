@@ -1,3 +1,6 @@
+<details>
+<summary>COMMON</summary>
+
 > Determine which shell you are using
 ```
 echo $SHELL
@@ -7,3 +10,10 @@ echo $SHELL
 echo 'alias k="kubectl"' >> ~/.zprofile
 source ~/.zprofile  
 ```
+</details>
+
+<details>
+<summary>GIT</summary>
+
+</details>
+
