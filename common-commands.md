@@ -27,6 +27,35 @@
   git config --global user.name "Your Name Here"
   git config --global user.email your@email.com
   ```
-
+  
+  > Show config settings for certain repo
+  ```
+  git config --list
+  ```
+  
+  > Show config settings for certain repo
+  ```
+  git config --global --list
+  ```
+  
+  > Remove the setting (for example username) from local .gitconfig
+  ```
+  git config --unset user.name
+  ```
+  
+  > Remove the setting (for example username) from global .gitconfig
+  ```
+  git config --global --unset user.name
+  ```
+  
+  > Delete object entirely (for example user) from local .gitconfig
+  ```
+  git config --remove-section user
+  ```
+  
+  > Delete object entirely (for example user) from global .gitconfig
+  ```
+  git config --global --remove-section user
+  ```
 </details>
 
