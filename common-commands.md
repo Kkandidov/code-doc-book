@@ -128,4 +128,9 @@
   ```
   nvm use 14
   ```
+  
+  **Install autocannon**
+  ```
+  npm i autocannon -g
+  ```
 </details>
