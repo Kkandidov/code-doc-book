@@ -59,3 +59,73 @@
   ```
 </details>
 
+<details>
+<summary>MAC</summary>
+
+  > create a directory (for example ~/.nvm)
+  ```
+  mkdir ~/.nvm 
+  ```
+</details>
+
+<details>
+<summary>NVM</summary>
+  
+  **Install NVM on macOS with Homebrew**
+
+  > Update the Homebrew package list
+  ```
+  brew update 
+  ```
+  
+  > Install NVM
+  ```
+  brew install nvm 
+  ```
+  
+  > Create a directory for NVM at home
+  
+  ```
+  mkdir ~/.nvm 
+  ```
+  
+  > Edit the following configuration file
+  ```
+  vim ~/.zshrc
+  ```
+  
+  > Add the below lines
+  ```
+  export NVM_DIR=~/.nvm
+  source $(brew --prefix nvm)/nvm.sh
+  ```
+  
+  > Load the variable to the current shell environment
+  ```
+  source ~/.zshrc
+  ```
+  
+  > shaw available versions
+  ```
+  nvm ls-remote
+  ```
+  
+  > Install node
+  ```
+  nvm install node
+  ```
+  > or (for example 14)
+  ```
+  nvm install 14
+  ```
+  
+  > Verify what is installed with
+  ```
+  nvm ls
+  ```
+  
+  > Set a version (for example 14)
+  ```
+  nvm use 14
+  ```
+</details>
