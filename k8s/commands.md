@@ -45,3 +45,72 @@
   ```
 
 </details>
+
+<details>
+<summary>a2_REPLICASET</summary>
+
+  > Create replicaset
+  ```
+  kubectl create -f a2_replicaset.yaml
+  ```
+  
+  > or
+  ```
+  kubectl apply -f a2_replicaset.yaml
+  ```
+
+  > Get pods
+  ```
+  kubectl get pod
+  ```
+  
+  > Scale replicaset
+  ```
+  kubectl scale replicaset my-replicaset --replicas 3
+  ```
+  
+  > Get pods
+  ```
+  kubectl get pod
+  ```
+  
+  > Delete pod (for example my-replicaset-pbtdm)
+  ```
+  kubectl delete pod my-replicaset-pbtdm
+  ```
+  
+  > Get pods
+  ```
+  kubectl get pod
+  ```
+  
+  > update replicaset template (image is getting nginx=nginx:1.13)
+  ```
+  kubectl set image replicaset my-replicaset nginx=nginx:1.13
+  ```
+  
+  > Get description of replicaset
+  ```
+  kubectl describe replicaset my-replicaset
+  ```
+  
+  > Get description of pod (for example my-replicaset-j746n pod)
+  ```
+  kubectl describe pod my-replicaset-j746n 
+  ```
+  
+  > Delete pod (for example my-replicaset-j746n pod)
+  ```
+  kubectl delete pod my-replicaset-j746n
+  ```
+  
+  > Get description of new pod (my-replicaset-rf999 pod)
+  ```
+  kubectl describe pod my-replicaset-rf999
+  ```
+  
+  > clean up cluster
+  ```
+  kubectl delete replicaset --all
+  ```
+</details>
