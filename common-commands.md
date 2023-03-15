@@ -66,6 +66,11 @@
   ```
   mkdir ~/.nvm 
   ```
+  
+  > which ports are open on your Mac
+  ```
+  lsof -i -P | grep -i "listen"
+  ```
 </details>
 
 <details>
