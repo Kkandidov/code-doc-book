@@ -160,7 +160,7 @@
 </details>
 
 <details>
-<summary>a4_Resources</summary>
+<summary>a4_RESOURCES</summary>
   
   > Create deployment with resources
   ```
