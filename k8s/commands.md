@@ -158,3 +158,41 @@
   kubectl delete deployment --all
   ```
 </details>
+
+<details>
+<summary>a4_Resources</summary>
+  
+  > Create deployment with resources
+  ```
+  kubectl apply -f a4_resources.yaml
+  ```
+  
+  > Check pods
+  ```
+  kubectl get pod
+  ```
+  
+  > Increase resources for deployment
+  ```
+  kubectl patch deployment my-deployment --patch '{"spec":{"template":{"spec":{"containers":[{"name":"nginx","resources":{"requests":{"cpu":"10"},"limits":{"cpu":"10"}}}]}}}}'
+  ```
+  
+  > Check pods
+  ```
+  kubectl get pod
+  ```
+  
+  > Check pod with PENDING status (its name is my-deployment-7f9cd6cb65-m7f87)
+  ```
+  kubectl describe po my-deployment-7f9cd6cb65-m7f87
+  ```
+  
+  > and see the following:
+  > Warning  FailedScheduling  108s  default-scheduler  0/1 nodes are available: 1 Insufficient cpu. preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+  
+  > clean up cluster
+  ```
+  kubectl delete deployment --all
+  ```
+</details>
+
