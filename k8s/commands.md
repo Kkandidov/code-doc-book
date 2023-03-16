@@ -114,3 +114,47 @@
   kubectl delete replicaset --all
   ```
 </details>
+
+<details>
+<summary>a3_DEPLOYMENT</summary>
+  
+  > Create deployment
+  ```
+  kubectl apply -f a3_deployment.yaml
+  ```
+  
+  > Check list of pods
+  ```
+  kubectl get pod
+  ```
+  
+  > Check lis of replicasets
+  ```
+  kubectl get replicaset
+  ```
+  
+  > Update image version for a container from deployment (set nginx:1.13)
+  ```
+  kubectl set image deployment my-deployment nginx=nginx:1.13
+  ```
+  
+  > Check list of pods
+  ```
+  kubectl get pod
+  ```
+  
+  > Check if our pod has a new image (our new pod is my-deployment-f69d497d9-c4jxk)
+  ```
+  kubectl describe pod my-deployment-f69d497d9-c4jxk
+  ```
+  
+  > Check replicasets
+  ```
+  kubectl get replicaset
+  ```
+  
+  > Clean up a cluster
+  ```
+  kubectl delete deployment --all
+  ```
+</details>
