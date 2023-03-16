@@ -1,2 +1,3 @@
 - namespace
 - update strategies
+- resources
