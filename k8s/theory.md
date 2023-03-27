@@ -3,3 +3,4 @@
 - resources
 - 12 factor application
 - configmap
+- secret (generic, docker-registry, tls)
