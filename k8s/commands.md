@@ -17,6 +17,11 @@
   ```
   kubectl config use-context docker-desktop
   ```
+  > View contexts
+  
+ ```
+ kubectl config view
+ ```
 
 </details>
 
