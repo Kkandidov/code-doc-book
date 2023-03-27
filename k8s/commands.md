@@ -22,8 +22,9 @@
  ```
  kubectl config view
  ```
-
 </details>
+
+---
 
 <details>
 <summary>a1_POD</summary>
@@ -200,4 +201,27 @@
   kubectl delete deployment --all
   ```
 </details>
+
+---
+
+<details>
+<summary>B1_DEPLOYMENT_WITH_ENV</summary>
+  
+  > Apply manifest for creating of a deployment
+  ```
+  kubectl apply -f b1_deployment_with_env.yaml 
+  ```
+  
+  > Show all the pods
+  ```
+  kubectl get pod 
+  ```
+  
+  > Check result (fill out your pod name, in this case it is 'my-deployment-57764d7b57-2wbxw')
+  ```
+  kubectl describe pod my-deployment-57764d7b57-2wbxw
+  ```
+  
+</details>  
+
 
