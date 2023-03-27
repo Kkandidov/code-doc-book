@@ -2,3 +2,4 @@
 - update strategies
 - resources
 - 12 factor application
+- configmap
