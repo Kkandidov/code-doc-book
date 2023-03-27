@@ -224,4 +224,22 @@
   
 </details>  
 
-
+<details>
+<summary>B2_B3_DEPLOYMENT_WITH_ENV_AND_CONFIGMAP</summary>
+  
+  > Create config map and apply configma to our deployment
+  ```
+  kubectl apply -f b2_configmap.yaml
+  kubectl apply -f b3_deployment_with_env_and_cm.yaml
+  ```
+  
+  > Get pods
+  ```
+  kubectl get pod 
+  ```
+  
+  > Check result (in this case pod name is 'my-deployment-57764d7b57-2wbxw')
+  ```
+  kubectl exec -it my-deployment-57764d7b57-2wbxw -- env
+  ```
+</details>  
