@@ -321,4 +321,13 @@
   kubectl exec -it my-deployment-5f7c7cbcd8-99cx4 -- bash
   ```
   
+  > Do port forwarding
+  ```
+  kubectl port-forward my-deployment-5f7c7cbcd8-99cx4 8080:80 &
+  ```
+  
+  > Check result
+  ```
+  curl 127.0.0.1:8080
+  ```
 </details>  
