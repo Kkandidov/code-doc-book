@@ -243,3 +243,62 @@
   kubectl exec -it my-deployment-57764d7b57-2wbxw -- env
   ```
 </details>  
+
+<details>
+<summary>B4_B5_DEPLOYMENT_WITH_SECRET</summary>
+  
+  > Create secret 'test'
+  ```
+  kubectl create secret generic test --from-literal=test1=asdf --from-literal=dbpassword=1q2w3e
+  ```
+  
+  > Get all the secrets
+  ```
+  kubectl get secret
+  ```
+  
+  > Get described 'test' secret
+  ```
+  kubectl get secret test -o yaml
+  ```
+  
+  > Create deployment with secret
+  ```
+  kubectl apply -f b5_deployment_with_secret.yaml
+  ```
+  
+  > Describe deployment (the name of deployment is 'my-deployment-6fc85868dd-67g2z')
+  ```
+  kubectl describe pod my-deployment-6fc85868dd-67g2z
+  ```
+  
+  > or once may to enter inside of pod (the name of deployment is 'my-deployment-6fc85868dd-67g2z')
+  ```
+  kubectl exec -it my-deployment-6fc85868dd-67g2z -- env
+  ```
+  
+  > Apply a manifest with a secret
+  ```
+  kubectl apply -f b4_secret.yaml
+  ```
+  
+  > Check our secret
+  ```
+  kubectl get secret test -o yaml
+  ```
+  
+  > Make chenges in our secret (change key name 'test' to 'test1')
+  ```
+  vim b4_secret.yaml
+  ```
+  
+  > Apply above secret
+  ```
+  kubectl apply -f b5_deployment_with_secret.yaml
+  ```
+  
+  > Check our secret
+  ```
+  kubectl get secret test -o yaml
+  ```
+</details>  
