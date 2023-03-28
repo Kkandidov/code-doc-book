@@ -345,4 +345,12 @@
   ```
   kubectl exec -it my-deployment-59c5846cbb-9bn6k -- env 
   ```
+  
+  > Clean up everything
+  ```
+  kubectl delete deployment my-deployment
+  kubectl delete configmap my-configmap-env
+  kubectl delete configmap my-configmap
+  kubectl delete secret test
+  ```
 </details>  
