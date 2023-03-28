@@ -331,3 +331,18 @@
   curl 127.0.0.1:8080
   ```
 </details>  
+
+
+<details>
+<summary>B8_DEPLOYMENT_WITH_DOWNWARD</summary>
+  
+  > Apply deployment
+  ```
+  kubectl apply -f b8_deployment_with_downward_api.yaml   
+  ```
+  
+  > Check env
+  ```
+  kubectl exec -it my-deployment-59c5846cbb-9bn6k -- env 
+  ```
+</details>  
