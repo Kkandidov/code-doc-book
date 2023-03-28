@@ -302,3 +302,23 @@
   kubectl get secret test -o yaml
   ```
 </details>  
+
+<details>
+<summary>B6_B7_DEPLOYMENT_WITH_CONFIGMAP</summary>
+  
+  > Create configmap
+  ```
+  kubectl apply -f b6_configmap.yaml     
+  ```
+  
+  > Create deployment
+  ```
+  kubectl apply -f b7_deployment_with_configmap.yaml
+  ```
+  
+  > Enter inside of a container (container name is my-deployment-5f7c7cbcd8-99cx4)
+  ```
+  kubectl exec -it my-deployment-5f7c7cbcd8-99cx4 -- bash
+  ```
+  
+</details>  
